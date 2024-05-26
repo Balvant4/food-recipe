@@ -43,9 +43,10 @@ export default function RecipeDetailsItem({ getRecipeDetails }) {
                 Ingredients
               </h1>
               <ul className="list-disc">
-                {getRecipeDetails?.ingredients.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
+                {getRecipeDetails?.ingredients.map((item) => (
+  <li key={item.id}>{item.name}</li>
+))}
+
               </ul>
             </div>
           </div>
