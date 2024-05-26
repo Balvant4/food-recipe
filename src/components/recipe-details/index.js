@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export default function RecipeDetailsItem({ getRecipeDetails }) {
   return (
     <div>
-      <Link href={"/recipe-list"}>
+      <Link href="/recipe-list">
         <Button variant="destructive" className="ml-5 mt-5">
           Check All Recipe List
         </Button>
@@ -17,8 +17,8 @@ export default function RecipeDetailsItem({ getRecipeDetails }) {
               src={getRecipeDetails?.image}
               alt={getRecipeDetails?.name}
               className="w-4/5 rounded object-cover"
-              width={500} // Adjust these values based on your requirements
-              height={500} // Adjust these values based on your requirements
+              width={500}
+              height={500}
               layout="responsive"
             />
           </div>
