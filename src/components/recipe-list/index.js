@@ -15,7 +15,7 @@ export default function RecipeList({ recipeList }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {recipeList && recipeList.length > 0
             ? recipeList.map((recipe) => (
-                <Link href={`/recipe-list/${recipe.id}`}>
+               <Link key={recipe.id} href={`/recipe-list/${recipe.id}`}>
                   <Card>
                     <CardContent className="bg-white rounded-md overflow-hidden shadow-md cursor-pointer hover:scale-[1.1] transition-all">
                       <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
