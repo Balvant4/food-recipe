@@ -27,6 +27,7 @@ export default function RecipeList({ recipeList }) {
                           className="h-full w-full object-cover object-top"
                           width={400} // Set your desired width
                           height={300} // Set your desired height
+                          layout="responsive"
                         />
                       </div>
                       <div className="p-6">
